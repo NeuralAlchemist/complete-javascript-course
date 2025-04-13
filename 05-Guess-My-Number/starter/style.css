@@ -15,7 +15,10 @@ body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
   background-color: #222;
-  /* background-color: #60b347; */
+}
+
+.success{
+  background-color: #60b347;
 }
 
 /* LAYOUT */
@@ -116,4 +119,18 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+.shake{
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shake{
+  3%, 21%, 39%, 57%, 74%, 92% {
+    transform: translateX(5px);
+  }
+  9%, 27%, 45%, 63%, 80%, 98% {
+    transform: translateX(-5px);
+  }
 }
